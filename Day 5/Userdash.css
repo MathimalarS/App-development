@@ -1,0 +1,237 @@
+/* User.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-dashboard {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-right input[type="text"] {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .header-right i {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .user-dropdown {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .user-name, .user-email {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logout-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #444;
+    color: white;
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-header {
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar-nav {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .sidebar-nav ul {
+    padding: 0;
+  }
+  
+  .sidebar-nav li {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-nav li:hover {
+    background-color: #555;
+  }
+  
+  .sidebar-nav i {
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    padding: 80px 20px 20px 20px;
+    flex-grow: 1;
+  }
+  
+  .profile-header, .profile-info, .orders-grid, .payment-info {
+    margin-bottom: 20px;
+  }
+  
+  .profile-header h2, .orders-grid h2, .payment-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .profile-details {
+    width: 100%;
+  }
+  
+  .profile-info-line p {
+    margin: 5px 0;
+  }
+  
+  .edit-button, .save-button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .profile-edit-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .profile-edit-form span {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .line-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .orders-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product-details h3 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .payment-info p {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
